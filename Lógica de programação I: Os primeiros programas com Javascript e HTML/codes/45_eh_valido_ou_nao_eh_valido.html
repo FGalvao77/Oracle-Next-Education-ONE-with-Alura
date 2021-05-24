@@ -1,0 +1,94 @@
+<!-- É valido ou não é válido?
+
+Kellen criou a função calculaImc durante suas aulas de lógica de programação: -->
+
+<!-- <meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / ( altura * altura );
+    }
+</script> -->
+
+<!-- Contudo, ela causou muita polêmica quando foi usar a função. Ela fez o seguinte:
+
+    mostra("O meu IMC é " + calculaImc(1.63, 48));
+
+Alguns alunos disseram que o código não funcionaria e que ela deveria fazer da seguinte forma:
+
+    var imcCalculado = calculaImc(1.63, 48);
+    mostra("O meu IMC é " + imcCalculado);
+
+Afinal, o código que Kellen escreveu funciona ou não? -->
+
+
+<!-- VER OPINIÃO DO INSTRUTOR
+
+O código funciona perfeitamente! É apenas mais uma forma de utilizar o retorno da variável de função.
+
+Vejamos o trecho polêmico:
+
+    mostra("O meu IMC é " + calculaImc(1.63, 48) );
+
+O que Kellen fez foi concatenar o texto "O meu IMC é " com uma função. É importante entender que a concatenação não é feita com a função, mas sim com seu retorno. Por exemplo, se a função retornar 25, será esse o valor concatenado com o texto. Isto é, uma sintaxe completamente válida. -->
+
+<!-- <meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / ( altura * altura );
+    }
+
+    mostra("O meu IMC é " + calculaImc(1.63, 48));
+
+</script> -->
+
+
+<!-- Código simplificado. -->
+
+<meta charset="utf-8">
+<script>
+    
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function exibeMensagem(texto) {
+        document.write(texto);
+        pulaLinha();
+    }
+
+    function calculaImc(peso, altura) {
+        return peso / (altura * altura);
+    }
+
+    // instanciando um título
+    var titulo = "Cálculo do IMC";
+
+    // exibindo o título
+    document.write("******************************");
+    document.write("<h1>" + titulo + "</h1>");
+    document.write("******************************");
+    pulaLinha();
+
+    exibeMensagem("O meu IMC é " + Math.round(calculaImc(78, 1.71)));
+
+</script>
