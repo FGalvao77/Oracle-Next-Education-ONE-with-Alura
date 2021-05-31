@@ -1,0 +1,111 @@
+<!-- Declarando um array
+
+Ao longo do curso, aprendemos a lidar com tipos diferentes como, texto, número e booleano (ex.: 'true' ou 'false'). Exemplos desses tipos são:
+
+var nome = "Regina"; // texto, ou tecnicamente falando, uma string
+var idade = 22; // número
+var temCarteira = true; // booleano
+
+Por fim, aprendemos sobre o tipo de dado chamado array. Ele permite que uma variável possua vários valores.
+
+Qual das opções abaixo declara corretamente um array? -->
+
+<!-- var coisas = ["Gisele", 12, true];
+
+
+Todo array é declarado com colchetes, o famoso []. Contudo se tivermos uma declaração desta forma var coisas = []; temos um array, ou seja, uma lista vazia sem qualquer elemento.
+
+Podemos, no momento da declaração de um array, adicionar elementos. Esses elementos podem ser de qualquer tipo conhecido do JavaScript:
+
+var coisas = ["Gisele", 12, true];
+
+Temos como primeiro item do Array uma String, o segundo um número e o último um boleano. -->
+
+
+<!-- Codificando... -->
+
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");
+	}
+
+	function exibeMensagem(texto) {
+
+		document.write(texto);
+		pulaLinha();
+	}
+
+	var dadosPessoais = ["Gisele", 12, true];
+
+	exibeMensagem("Nome: " + dadosPessoais[0]);
+	exibeMensagem("Idade: " + dadosPessoais[1]);
+
+	if (dadosPessoais[2] == true) {
+		resposta = "Sim";
+	} else {
+		resposta = "Não";
+	}
+
+	exibeMensagem("CNH: " + resposta);
+
+</script>
+
+<!-- <meta charset="utf-8">
+
+<input/>
+<button>Verificar</button>
+
+<script>
+	
+	var dadosPessoais = [];
+
+	var nome = prompt("Informe seu nome:");
+	dadosPessoais[0].append[nome];
+
+	var idade = parseInt(prompt("Informe sua idade:"));
+	dadosPessoais[1].append[idade];
+
+	var temCNH = prompt("Possui CNH?");
+	if (temCNH == "Sim") {
+		temCNH = true;
+	} else {
+		temCNH = false;
+	}
+
+	var entrada = document.querySelector("input");
+	entrada.focus();
+
+	function verificaDados() {
+
+		var correto = false;
+
+		for (var posicao = 0; 
+			posicao < dadosPessoais.length; 
+			posicao++);
+
+			if (entrada.value == dadosPessoais[posicao]) {
+
+				alert(entrada + ": PERTENCE à base de dados");
+				correto = true;
+				break;
+			}
+
+			if (correto == false) {
+
+				alert (entrada + ": NÃO PERTENCE à base de dados");
+			}
+
+			entrada.value = "";
+			entrada.focus();
+	}
+
+	var botao = document.querySelector("button");
+	botao.onclick = verificaDados;
+
+</script> -->
+
+

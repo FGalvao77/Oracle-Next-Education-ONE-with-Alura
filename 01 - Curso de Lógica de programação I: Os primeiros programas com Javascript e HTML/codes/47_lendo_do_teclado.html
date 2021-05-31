@@ -1,0 +1,46 @@
+<!-- Lendo do teclado!
+
+Se quisermos exibir um pop-up, que mostre uma pergunta e permita ao usuário entrar com um valor, fazemos uso da função prompt.
+
+Usando a função prompt, qual das opções abaixo lê dois números, do teclado, e exibe a multiplicação de um por outro para o usuário? -->
+
+
+<!-- Minha solução: -->
+
+
+<meta charset='utf-8'>
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br><br>");
+	}
+
+	function exibeMensagem(texto) {
+
+		document.write(texto);
+		pulaLinha();
+	}
+
+	function multiplica(num1, num2) {
+		return num1 * num2;
+	}
+
+	// instanciando um título
+	var titulo = "MULTIPLICAÇÃO";
+
+	// exibindo o título
+	document.write("*********************************");
+    document.write("<h1>" + titulo + "</h1>");
+    document.write("*********************************");
+    pulaLinha();
+
+    var nome = prompt("Informe o seu nome!");
+    var num1Informado = prompt(nome + ", informe um número!");
+	var num2Informado = prompt(nome + ", informe outro número!");
+
+	var total = multiplica(num1Informado, num2Informado);
+	exibeMensagem(nome + ", a multiplicação dos números informados é : " + total);
+	
+</script>

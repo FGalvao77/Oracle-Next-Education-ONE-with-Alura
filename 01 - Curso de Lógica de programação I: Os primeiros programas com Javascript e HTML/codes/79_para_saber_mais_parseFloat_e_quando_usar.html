@@ -1,0 +1,44 @@
+<!-- Para saber mais: parseFloat e quando usar
+
+Aprendemos a utilizar parseInt() para converter um texto em número. Certo? 
+Contudo, ele converte um texto para um número inteiro e nem sempre queremos abdicar dos números decimais. 
+Vejamos um exemplo:
+
+var numero = parseInt("12.13");
+
+O valor de numero será 12. Para que as casas decimais sejam mantidas, usamos o parseFloat():
+
+var numero = parseFloat("12.13");
+
+O valor de numero será 12.13. -->
+
+
+<!-- Codificando... -->
+
+<meta charset="utf-8">
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");
+	}
+
+	function exibeMensagem(texto) {
+
+		document.write(texto);
+		pulaLinha();
+	}
+
+	var var1 = parseInt("3.14");
+	var var2 = parseFloat("3.14");
+
+	exibeMensagem("O valor da variável 1 é: " + var1);
+	exibeMensagem("O valor da variável 2 é: " + var2);
+
+</script>
+
+
+<!-- Opinião do instrutor
+
+Não é necessário usar o parseFloat() quando lemos os dados de peso e altura no cálculo do IMC, são como operações de divisão e multiplicação o JavaScript já realiza a conversão implícita para nós. Contudo, é uma boa prática usar parseInt() ou parseFloat() se queremos ler números inteiros ou decimais fornecido pela função prompt. Nem sempre a conversão implícita vai dar certo, como é o caso do número de vitórias e empates. -->
+

@@ -1,0 +1,36 @@
+<!-- Função que recebe mais de um parâmetro
+
+Helena teve a ideia de criar a função somaDoisNumeros. 
+Esta função precisa receber dois parâmetros e imprimir como resultado a soma desses dois números. -->
+
+
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {	// função para pular linha
+        document.write("<br><br>");
+    }
+
+    function exibeMensagem(frase) {	// função para exibir mensagem
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function somaDoisNumeros(num1, num2) {	// função para realizar a soma de dois números
+        exibeMensagem("A soma dos numeros " + num1 + " e " + num2 + " é : " + (num1 + num2) );
+    }
+
+    // instanciando um título
+	var titulo = "SOMA DOIS NÚMEROS";
+
+	// exibindo o título
+	document.write("*****************************************************");
+    document.write("<h1>" + titulo + "</h1>");
+    document.write("*****************************************************");
+    pulaLinha();
+
+    somaDoisNumeros(10, 40);
+
+
+</script>
+
